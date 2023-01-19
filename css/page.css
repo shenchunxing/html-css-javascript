@@ -1,0 +1,12 @@
+/*支持的字符格式*/
+@charset "UTF-8";
+
+div {
+    color: green;
+    background-color: red;
+    font-size: 30px;
+}
+
+p {
+    color: yellow;
+}
