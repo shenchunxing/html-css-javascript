@@ -21,12 +21,14 @@
         span {
             background-color: #0f0;
             /*border: 2px solid #ff0;*/
+            /*outline不占用空间，显示在border外面，outline是连接在一起的，border可能断开*/
             outline: 2px solid #ff0;
         }
 
         a, input {
-            outline: none;
-            border: none;
+            /*去除超链接的边框*/
+            /*outline: none;*/
+            /*border: none;*/
         }
     </style>
 </head>

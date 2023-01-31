@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>11-文档画布的背景</title>
     <style>
+        /*body和html元素是特殊元素。可以延伸到文档大小*/
         body {
             background-color: #f00;
         }
@@ -18,7 +19,7 @@
         }
 
         div:hover {
-            /*cursor: pointer;*/
+            /*默认去加载image，加载失败就显示小手*/
             cursor: url("images/heart.gif") 10 10, pointer;
         }
 

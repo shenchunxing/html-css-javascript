@@ -5,6 +5,7 @@
     <title>03-display</title>
     <style>
         span {
+            /*让span也变成块级元素*/
             display: block;
             background-color: #f00;
             width: 100px;
@@ -12,13 +13,16 @@
         }
 
         div {
+            /*让div也变成行内级元素*/
             display: inline;
             background-color: #0f0;
+            /*行内级元素宽高设置无效*/
             width: 100px;
             height: 100px;
         }
 
         p {
+            /*隐藏*/
             display: none;
         }
     </style>

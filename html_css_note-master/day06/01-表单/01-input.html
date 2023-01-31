@@ -15,6 +15,7 @@
             height: 50px;
         }
 
+        /*控件组*/
         fieldset {
             width: 400px;
             margin-bottom: 20px;
@@ -44,7 +45,9 @@ input的value属性用途
 -->
 
 <form action="http://www.baidu.com" method="get">
+    <!--控件组-->
     <fieldset>
+        <!--图例-->
         <legend>必填信息</legend>
 
         <div>
@@ -82,6 +85,7 @@ input的value属性用途
             同一种类型的radio，name值要保持一致，才能实现单选功能
              -->
             性别：
+            <!--默认选中checked-->
             男<input type="radio" name="sex" value="1" title="男" checked tabindex="-1">
             女<input type="radio" name="sex" value="2" title="女" tabindex="-1">
         </div>
@@ -93,6 +97,7 @@ input的value属性用途
              -->
             兴趣：
             篮球<input type="checkbox" name="hobby" value="1" title="篮球" tabindex="-1">
+            <!--默认选中checked-->
             足球<input type="checkbox" name="hobby" value="2" title="足球" checked tabindex="-1">
             跑步<input type="checkbox" name="hobby" value="3" title="跑步" tabindex="-1">
             <!--电影：
@@ -103,6 +108,7 @@ input的value属性用途
 
         <div>
             学历：
+            <!--下拉框select-->
             <select name="edu" title="学历">
                 <option value="1">小学</option>
                 <option value="2">初中</option>

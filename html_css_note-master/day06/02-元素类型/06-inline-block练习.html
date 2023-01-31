@@ -11,6 +11,7 @@
         }
 
         .page li {
+            /*显示成行内级,并可以随意控制大小*/
             display: inline-block;
             width: 30px;
             height: 30px;
@@ -21,25 +22,29 @@
             font-size: 14px;
         }
 
+        /*设置头尾的宽度*/
         .page .pre, .page .next {
             width: 70px;
         }
 
         .page li a {
             background-color: #fff;
+            /*撑满*/
             display: block;
             height: 30px;
             text-decoration: none;
             border: 1px solid #ddd;
+            /*默认所有颜色*/
             color: #00f;
             /*text-align: center;
             font-size: 12px;*/
         }
 
+        /*按下去颜色*/
         .page li a:active {
             color: #f00;
         }
-
+        /*鼠标移上去*/
         .page li a:hover {
             background-color: #f2f8ff;
             border: 1px solid #38f;

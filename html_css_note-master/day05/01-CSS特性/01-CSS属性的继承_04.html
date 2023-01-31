@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>01-CSS属性的继承_04</title>
     <style>
+        /*从父元素继承的是计算值*/
         .div1 {
             font-size: 50px;
         }
@@ -17,6 +18,10 @@
             font-size: inherit; /* 继承父元素的计算值 25px */
             /*font-size: 50%; !* 25px * 50% = 12.5px *!*/
         }
+
+        .div4 {
+            font-size: 50px;
+        }
     </style>
 </head>
 <body>
@@ -25,6 +30,7 @@
     <div class="div2">div2
         <div class="div3">div3</div>
     </div>
+    <div class="div4">div4</div>
 </div>
 
 </body>

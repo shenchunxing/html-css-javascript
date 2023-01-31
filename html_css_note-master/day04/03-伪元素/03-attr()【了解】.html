@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <title>03-attr()【了解】</title>
     <style>
+        /*
+        attr可以获取元素的属性值
+        */
         /*div::before {
             content: attr(class);
         }*/
 
+        /*有href这个属性，且以http开头的a元素*/
         a[href^="http"]::after {
             content: "[ " attr(href) " ]";
         }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>03-练习</title>
+    <!--打开新页面-->
     <base target="_blank">
 </head>
 <body>
@@ -25,9 +26,9 @@
 <form action="http://www.kugou.com/yy/html/search.html">
     <input type="text" name="searchKeyWord" placeholder="请输入搜索关键词">
     <select name="searchType">
-        <option value="song">单曲</option>
         <option value="special">歌单</option>
         <option value="mv">MV</option>
+        <option value="song">单曲</option>
     </select>
     <button type="submit">酷狗搜索</button>
 </form>
@@ -40,6 +41,8 @@
 
 2.accept-charset的属性值最终由服务器（后台）决定
  -->
+
+<!--汽车之家接受的编码方式是GB2312-->
 <form action="https://sou.autohome.com.cn/zonghe" accept-charset="GB2312">
     <input type="text" name="q" placeholder="请输入搜索关键词">
     <button type="submit">汽车之家</button>
