@@ -63,6 +63,7 @@
             height: 2px;
             width: 16px;
             border-radius: 5px;
+            /*绝对定位元素，不会计算高度进去*/
             position: absolute;
             bottom: -5px;
             left: 50%;
@@ -104,6 +105,7 @@
 </head>
 <body>
 
+<!--清浮动，解决高度坍塌的问题-->
 <div class="container clear-fix">
     <h2><a href="#">剧集 &gt;</a></h2>
     <ul>

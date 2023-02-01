@@ -27,13 +27,15 @@
         .footer {
             /*height: 0;*/
             /*background-color: #0f0;*/
+            /*clear：确保在浮动元素下、左、右。用在非浮动元素上*/
             clear: both;
         }
     </style>
 </head>
 <body>
 
-<!-- 在父元素最后增加一个空的块级子元素，并且让它设置clear: both -->
+<!-- 在父元素最后增加一个空的块级子元素，并且让它设置clear: both
+（不推荐，增加很多无意义的空标签，违反结构和样式分离的原则）-->
 
 <div class="container">
     <div class="box1"></div>

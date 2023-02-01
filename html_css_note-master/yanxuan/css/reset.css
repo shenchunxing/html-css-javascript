@@ -4,7 +4,7 @@ body, dl, dt, dd, ul, ol, li,
 h1, h2, h3, h4, h5, h6, pre, p,
 form, button, input, textarea, select,
 table, tr, td, th {
-    /* 去除边距 */
+    /* 对浏览器的样式重置，去除边距 */
     margin: 0;
     padding: 0;
 }
@@ -15,12 +15,12 @@ i, em {
 }
 
 li {
-    /* 去除圆点 */
+    /* 去除左侧圆点 */
     list-style: none;
 }
 
 a {
-    /* 去除下划线 */
+    /* 去除默认下划线 */
     text-decoration: none;
 }
 
@@ -42,8 +42,8 @@ button, input, textarea, select, a {
 }
 
 img {
-    /* 去除默认边框 */
+    /* 去除有些浏览器会有的默认边框 */
     border: none;
-    /* 设置顶部对齐(去除图片的一些间隙) */
+    /* 默认是基线对齐，会导致图片和文字一行的时候，图片底下有间隙。设置顶部对齐top可以(去除图片的一些间隙) */
     vertical-align: top;
 }

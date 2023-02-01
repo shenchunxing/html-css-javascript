@@ -12,6 +12,7 @@
         
         .number {
             background-color: #f00;
+            /*让数字盖在上面，以定位的父元素为参考系*/
             position: absolute;
             top: -5px;
             right: 0;
@@ -22,7 +23,7 @@
             width: 70px;
             height: 70px;
 
-            /* 让.buy-car元素成为定位元素 */
+            /* 让.buy-car元素成为定位元素，number以buy-car为参考系*/
             position: relative;
 
             margin-top: 180px;

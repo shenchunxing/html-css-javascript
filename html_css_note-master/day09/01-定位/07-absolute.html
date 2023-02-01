@@ -27,15 +27,17 @@
             width: 100px;
             height: 100px;
             background-color: #ff0;
+            /*因为d2是定位元素，d3不是定位元素，参考的是d2，*/
+            /*如果都不是定位元素，就参考视口*/
             position: absolute;
             right: 0;
             bottom: 0;
         }
 
         /*
-        relative : 参照元素自己原来的位置，不脱标
+        relative : 相对定位，参照元素自己原来的位置，不脱标
         fixed : 参照视口，脱标
-        absolute : 参照最邻近的定位祖先元素（如果找不到这样的祖先元素，那就参照视口），脱标
+        absolute : 绝对定位，参照最邻近的定位祖先元素（如果找不到这样的祖先元素，那就参照视口），脱标
         */
     </style>
 </head>

@@ -10,23 +10,23 @@
         }
 
         /* 适用于现在流行的所有浏览器 */
-        /*.container::after {
-            content: "";
-            display: block;
-            clear: both;
-        }*/
+        /*.container::after {*/
+        /*    content: "";*/
+        /*    display: block;*/
+        /*    clear: both;*/
+        /*}*/
 
-        /* 为了适配以前的旧浏览器，还需要这么写 */
+        /* 为了适配以前的旧浏览器，还需要这么写*/
         .container::after {
             content: "";
             display: block;
             clear: both;
-            height: 0;
-            visibility: hidden;
+            height: 0;/*兼容旧浏览器*/
+            visibility: hidden;/*兼容旧浏览器*/
         }
 
         .container {
-            *zoom: 1;
+            *zoom: 1;/*兼容旧浏览器*/
         }
 
         .box1, .box2 {
