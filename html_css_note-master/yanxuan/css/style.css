@@ -13,6 +13,7 @@ body {
     background-color: #333;
 }
 
+/*网站导航上面的a*/
 .site-nav a {
     color: #ccc; 
     font-size: 12px;
@@ -22,25 +23,31 @@ body {
     color: #fff;
 }
 
+/*好的生活，没那么贵*/
 .site-nav .slogan {
     float: left;
     margin-right: 30px;
 }
 
+/*通知*/
 .site-nav .notice-list {
     float: left;
     height: 36px;
     margin-left: 30px;
     padding-left: 26px;
+    /*喇叭*/
     background: url("../images/notice-icon.gif") no-repeat left center;
+    /*超过部分隐藏，需要js实现轮播效果*/
     overflow: hidden;
 }
 
+/*通知item*/
 .site-nav .notice-list ui {
     position: relative;
     top: 0;
 }
 
+/*通知item*/
 .site-nav .notice-list li {
     height: 36px;
 }
@@ -48,6 +55,7 @@ body {
 .site-nav .notice-list a {
     text-decoration: underline;
     color: #b4a078;
+    /*和喇叭对齐*/
     vertical-align: top;
 }
 
@@ -72,6 +80,7 @@ body {
     background-color: #5c5c5c;
 }
 
+/*手机图标*/
 .site-nav .download-app::before {
     content: "";
     display: inline-block;
@@ -92,6 +101,7 @@ body {
     vertical-align: middle;
 }
 
+/*旋转180度*/
 .site-nav .service:hover::after {
     transform: rotate(180deg);
 }
@@ -101,7 +111,9 @@ body {
 .func-nav {
     /* z-index生效必须是定位元素 */
     position: relative;
+    /*设置优先级，否则会盖住阴影*/
     z-index: 1;
+    /*阴影*/
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
 }
 
@@ -109,6 +121,7 @@ body {
     height: 204px;
 }
 
+/*网易严选*/
 .func-nav .logo {
     /* 使用下面代码会产生margin-top的传递问题 */
     /* margin: 50px auto 0; */
@@ -123,18 +136,22 @@ body {
     background-position: 0 -146px;
 }
 
+/*网易严选超链接*/
 .func-nav .logo a {
     display: block;
     height: 60px;
+    /*在a上写文字，但是不需要显示，为了让搜索引擎可以搜到*/
     font-size: 0;
 }
 
+/*整个搜索框*/
 .func-nav .search {
     position: absolute;
     top: 75px;
     right: 50px;
 }
 
+/*搜索框输入*/
 .func-nav .search input {
     line-height: 22px;
     height: 22px;
@@ -145,6 +162,7 @@ body {
     border-bottom: 1px solid #D8CEBC;
 }
 
+/*搜索框占位*/
 .func-nav .search .placeholder {
     position: absolute;  
     top: 2px;
@@ -189,6 +207,7 @@ body {
     background-position: 0 -80px;
 }
 
+/*购物车*/
 .func-nav .buy-car .count {
     position: absolute;
     top: 0;
@@ -202,12 +221,14 @@ body {
     background-position: 0 -51px;   
 }
 
+/*选项卡整体*/
 .func-nav .tab-nav {
     position: absolute;
     bottom: 20px;
     width: 100%;
 }
 
+/*选项卡单个item*/
 .func-nav .tab-nav .item {
     float: left;
     height: 23px;
@@ -216,17 +237,20 @@ body {
     font-size: 14px;
 }
 
+/*选项卡单个item上的a标签*/
 .func-nav .tab-nav .item a {
     display: block;
     padding-bottom: 5px;
 }
 
+/*鼠标以上 或者 第一个选项卡被选中（默认选中），底下显示一个选中条*/
 .func-nav .tab-nav .item:hover a,
 .func-nav .tab-nav .item.active a {
     border-bottom: 3px solid #b4a078;
     color: #b4a078;
 }
 
+/*分割线*/
 .func-nav .tab-nav .divider {
     float: left;
     height: 20px;
@@ -239,9 +263,10 @@ body {
 /* region 轮播图 */
 .slider {
     position: relative;
-    overflow: hidden;
+    overflow: hidden;/*溢出隐藏*/
 }
 
+/*轮播图列表*/
 .slider .image-list {
     position: relative;
     /* 通过定位与外边距使得图片居中 */
@@ -250,20 +275,24 @@ body {
     height: 420px;
 }
 
+/*轮播图元素项*/
 .slider .image-list li {
     position: absolute;
     left: 0;
     top: 0;
 }
 
+/*前一个*/
 .slider .pre {
     left: 150px;
 }
 
+/*后一个*/
 .slider .next {
     right: 150px;   
 }
 
+/*5个pageControl*/
 .slider .page-list {
     position: absolute;
     bottom: 15px;
@@ -273,15 +302,16 @@ body {
     width: 400px;
     text-align: center;
 }
-
+/*每个小圆点*/
 .slider .page-list li {
     display: inline-block;
     margin: 0 10px;
     vertical-align: middle;
 }
 
+/*小圆点上的按钮*/
 .slider .page-list button {
-    /* 设置为block,是为了不让button和li的vertical-align混淆在一起 */
+    /* 设置为block,是为了不让button和li的vertical-align混淆在一起，导致对不齐 */
     display: block;
     width: 12px;
     height: 12px;
@@ -291,6 +321,7 @@ body {
     cursor: pointer;
 }
 
+/*鼠标移上去 或者 第一个激活的按钮*/
 .slider .page-list button:hover,
 .slider .page-list .active button {
     border: 2px solid #b4a078;
@@ -387,6 +418,7 @@ body {
 }
 
 .new-products .content {
+    /*为了让最后一个新品首发多出的10像素右边距隐藏*/
     margin-right: -10px;
 }
 
@@ -721,6 +753,7 @@ body {
     height: 180px;
     width: 363px;
     width: 33.33333%;
+    /*边框包含在33.33333%里面，不会因为设置了2个分割线导致超过宽度*/
     box-sizing: border-box;
 }
 
